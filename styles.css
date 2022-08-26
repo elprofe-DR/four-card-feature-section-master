@@ -1,0 +1,117 @@
+/*********************tag selectors**************************/
+body {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(234, 12%, 34%);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+img {
+  width: 50px;
+  padding: 0;
+  margin: 0;
+}
+h5 {
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+p {
+  font-size: 0.7rem;
+  color: hsl(229, 6%, 66%);
+  padding-right: 20px;
+}
+footer {
+  text-align: center;
+}
+
+/*********************class selectors***********************/
+.section-header-txt {
+ margin-top: 20px;
+ width: 550px;
+ text-align: center;
+ align-items: center;
+ display: inline-block;
+ margin-bottom: 40px;
+}
+.title {
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin-bottom: 0;
+}
+.subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.txt-description {
+  color: hsl(229, 6%, 66%);
+}
+.cardd-pack {
+  display: grid;
+  gap: 20px;
+  margin: 0 10px 50px 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(190px, auto);
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+}
+.card{
+  box-shadow: 10px 10px 25px 10px #ccc;
+  border-style: hidden;
+}
+.Supervisor {
+  border-top: solid 5px hsl(180, 62%, 55%);
+  grid-area: 1 / 1 / 3 / 2;
+}
+.teamBuilder {
+  border-top: solid 5px hsl(0, 78%, 62%);
+  grid-area: 1 / 2 / 2 / 3;
+}
+.Karma {
+  border-top: solid 5px hsl(34, 97%, 64%);
+  grid-column: 2;
+}
+.Calculator {
+  border-top: solid 5px hsl(212, 86%, 64%);
+  grid-area: 1 / 3 / 3 / 4;
+}
+/**************images********************/
+.img {
+  display: block;
+  text-align: right;
+  margin-top: 50px;
+}
+/*********************id selectors******************************/
+
+/********************media query*****************************/
+
+/*********************resposivenes queries**********************/
+@media screen and (max-width: 600px) {
+main {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+
+}
+.section-header-txt {
+  margin-top: 20px;
+  width: auto;
+  text-align: center;
+  align-items: center;
+  display: inline-block;
+  margin-bottom: 40px;
+
+}
+.cardd-pack {
+display: inline-block;
+}
+
+}
